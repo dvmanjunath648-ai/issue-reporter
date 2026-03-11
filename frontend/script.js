@@ -1,4 +1,4 @@
-const API = "http://localhost:5001";
+const API = "https://issue-reporter-backend.onrender.com";
 
 let issues = [];
 
