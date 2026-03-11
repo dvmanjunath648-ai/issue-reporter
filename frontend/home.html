@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+<title>Local Issue Reporter</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Leaflet Map Library -->
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h2>Local Issue Reporter</h2>
+
+<div class="nav-links">
+
+<a href="home.html">Home</a>
+<a href="report.html">Report Issue</a>
+<a href="dashboard.html">Dashboard</a>
+
+<span id="userName"></span>
+
+<button onclick="goLogin()">Login</button>
+<button onclick="goRegister()">Register</button>
+<button onclick="logout()">Logout</button>
+
+</div>
+
+</nav>
+
+
+<!-- MAIN CONTENT -->
+
+<section class="container">
+
+<h1>Community Reported Issues</h1>
+
+<p class="subtitle">
+Help improve your city by reporting and tracking local problems
+</p>
+
+<input
+id="searchInput"
+placeholder="Search issues by title or location..."
+onkeyup="searchIssues()"
+/>
+
+<div id="issueContainer" class="grid"></div>
+
+</section>
+
+
+<!-- MAP SECTION -->
+
+<
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Local Issue Reporter | Community Service Platform</p>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

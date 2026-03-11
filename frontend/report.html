@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Report Issue</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>Report Issue</h2>
+
+<a href="home.html">Home</a>
+
+</nav>
+
+
+<section class="container">
+
+<h2>Report a Local Problem</h2>
+
+<input id="title" placeholder="Issue Title">
+
+<input id="location" placeholder="Location">
+
+<textarea id="description" placeholder="Describe the issue"></textarea>
+
+
+<!-- CATEGORY -->
+
+<select id="category">
+
+<option value="pothole">Pothole</option>
+<option value="garbage">Garbage</option>
+<option value="streetlight">Streetlight</option>
+
+</select>
+
+
+<!-- PRIORITY -->
+
+<select id="priority">
+
+<option value="low">Low</option>
+<option value="medium">Medium</option>
+<option value="high">High</option>
+
+</select>
+
+
+<!-- IMAGE -->
+
+<input
+type="file"
+id="photo"
+onchange="previewImage()"
+/>
+
+<img id="preview" width="200">
+
+
+<br><br>
+
+<button onclick="reportIssue()">Submit Issue</button>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
